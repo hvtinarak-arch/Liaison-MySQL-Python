@@ -9,11 +9,11 @@ if __name__ == "__main__":
     db = ma_base.connecter()
     ma_langue = Langue(db)
      
-    #ma_langue.ajouter("6", "Français", "fr-ca")
+    ma_langue.ajouter("1", "Français", "fr-ca")
     
     ma_langue.affichage()
     langues_enregistrees = ma_langue.affichage()
-    print("--- Liste des langues dans la base foodly ---")
+    print("--- Liste des langues dans la base script ---")
     for ligne in langues_enregistrees:
         print(ligne)
     

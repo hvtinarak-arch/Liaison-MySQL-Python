@@ -7,7 +7,7 @@ class ConnectionDB :
         self.host = "localhost"
         self.user = "root"
         self.password = "Tin@97k@nto2001"
-        self.database = "foodly"
+        self.database = "script"
         self.connection = None
     def connecter(self) :
         """Établit la connexion à la base de données."""
@@ -19,7 +19,7 @@ class ConnectionDB :
                 database=self.database
             )
             if self.connection.is_connected():
-                print("✅ Connexion à 'foodly' réussie !")
+                print("✅ Connexion à 'script' réussie !")
                 return self.connection
         except Error as e:
             print(f"❌ Erreur lors de la connexion : {e}")

@@ -4,7 +4,7 @@ class Langue:
         self.curseur = self.db.cursor()
     
     def ajouter(self, id, nom, code):
-        sql = "INSERT INTO langue (id, nom, code_pays) VALUES (%s, %s, %s)"
+        sql = "INSERT INTO langue (id, nom, code) VALUES (%s, %s, %s)"
         valeurs = (id, nom, code)
         self.curseur.execute(sql, valeurs)
         self.db.commit()
