@@ -9,7 +9,7 @@ if __name__ == "__main__":
     db = ma_base.connecter()
     ma_langue = Langue(db)
      
-    ma_langue.ajouter("1", "Français", "fr-ca")
+    ma_langue.ajouter("2", "Français", "fr-ca")
     
     ma_langue.affichage()
     langues_enregistrees = ma_langue.affichage()
