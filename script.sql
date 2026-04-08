@@ -1,3 +1,7 @@
+
+use `liaison_mysqlpython`;
+DROP TABLE IF EXISTS `aliment`;
+DROP TABLE IF EXISTS `langue`;
 CREATE TABLE `aliment` (
   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nom` varchar(100) NOT NULL,
