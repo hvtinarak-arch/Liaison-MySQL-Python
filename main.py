@@ -13,7 +13,7 @@ if __name__ == "__main__":
     
     ma_langue.affichage()
     langues_enregistrees = ma_langue.affichage()
-    print("--- Liste des langues dans la base script ---")
+    print("--- Liste des langues dans la base script ---POUR MODIFICATION be")
     for ligne in langues_enregistrees:
         print(ligne)
     
